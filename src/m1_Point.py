@@ -50,9 +50,7 @@ class Point(object):
       self.y=y
 
   def __repr__(self):
-     print(self)
-
-
+      return print('Point(x,y)')
 
 
 
