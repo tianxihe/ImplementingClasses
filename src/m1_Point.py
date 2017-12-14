@@ -27,7 +27,7 @@ def main():
 ########################################################################
 
 # ----------------------------------------------------------------------
-# TODO: 2. With your instructor, READ THE INSTRUCTIONS
+# DONE: 2. With your instructor, READ THE INSTRUCTIONS
 #   in file  m0_INSTRUCTIONS.txt, asking questions as needed.
 #
 #   Then implement a class called   Point   that has NO METHODS yet,
@@ -44,13 +44,16 @@ def main():
 # to have additional side effects as needed by it and/or other methods.
 ########################################################################
 class Point(object):
+ """Model a Point in 2-space"""
 
-  def __init__(self,x,y):
+ def __init__(self,x,y):
       self.x=x
       self.y=y
 
-  def __repr__(self):
-      return print('Point(x,y)')
+## ""__"" mean pycharm have something special to do with that
+ def __repr__(self):
+      return "Point({}, {})".format(self.x,self.y)
+
 
 
 
@@ -197,6 +200,7 @@ def run_test_repr():
     # TODO: 4.  Follow the same instructions as in TODO 3 above,
     #           but for the  __repr__  method specified above.
     # ------------------------------------------------------------------
+
     print()
     print('-----------------------------------------------------------')
     print('Testing the   __repr__   method of the Point class.')
